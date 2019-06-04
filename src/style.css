@@ -1,0 +1,11 @@
+.hello {
+  font-family: 'webfont';
+  color: red;
+}
+
+@font-face {
+  font-family: 'webfont';
+  src: url('./webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
