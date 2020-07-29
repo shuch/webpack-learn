@@ -3,8 +3,14 @@ import './style.css';
 import img from './cat.jpg';
 
 const cat = new Image();
-cat.src = img;
+cat.src = '../' + img;//'../dist/' + img;
 
 document.body.appendChild(cat);
 
-document.write(helloworld());
+document.write(`<br>${helloworld()}</br>`);
+
+
+// hot module replacement client
+if (module.hot) {
+  module.hot.accept();
+}
